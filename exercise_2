@@ -1,0 +1,44 @@
+select driver_name, avg(score) from responses
+group by driver_name;
+
+select a.department, b.driver_name, count(b.score) from employees a
+join responses b
+on a.id = b.employee_id
+group by a.department, b.driver_name;
+
+select a.location, b.driver_name, count(b.score) from employees a
+join responses b
+on a.id = b.employee_id
+group by a.location, b.driver_name;
+
+select a.gender, b.driver_name, count(b.score) from employees a
+join responses b
+on a.id = b.employee_id
+group by a.gender, b.driver_name;
+
+select 
+	case 
+      when a.age between 20 and 30 then '20-30'
+      when a.age between 31 and 40 then '31-40'
+      when a.age between 41 and 50 then '41-50'
+      else 'unknown'
+    end as 'age_group',
+    count(b.score)
+from employees a 
+join responses b 
+on a.id =b.employee_id 
+group by age_group;
+
+select a.name as manager_name,
+count(b.score)
+from employees a, responses b
+where a.id = b.employee_id and 
+a.id in (select distinct manager_id from employees) 
+group by manager_name;
+
+select b.driver_name, a.department 
+from employees as a
+join responses as b
+on a.id = b.employee_id
+group by b.driver_name, a.department
+having count(b.score) > 3;
