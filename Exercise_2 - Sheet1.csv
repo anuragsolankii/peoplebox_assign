@@ -1,0 +1,101 @@
+Query #1 Execution time: 0.59ms,,,,,,,,
+driver_name,avg(score),,driver_name,SUM of avg(score),,,,
+Career Growth,2.818181818,,Career Growth,2.818181818,,,,
+Company Policies,2.763636364,,Company Policies,2.763636364,,,,
+Manager Support,2.818181818,,Manager Support,2.818181818,,,,
+Role Clarity,2.745454545,,Role Clarity,2.745454545,,,,
+,,,Grand Total,11.14545455,,,,
+Query #2 Execution time: 0.84ms,,,,,,,,
+department,driver_name,count(b.score),SUM of count(b.score),driver_name,,,,
+Engineering,Career Growth,11,department,Career Growth,Company Policies,Manager Support,Role Clarity,Grand Total
+Engineering,Company Policies,11,Engineering,11,11,11,11,44
+Engineering,Manager Support,11,Finance,3,3,3,3,12
+Engineering,Role Clarity,11,Marketing,11,11,11,11,44
+Finance,Career Growth,3,Operations,8,8,8,8,32
+Finance,Company Policies,3,Sales,11,11,11,11,44
+Finance,Manager Support,3,Support,11,11,11,11,44
+Finance,Role Clarity,3,Grand Total,55,55,55,55,220
+Marketing,Career Growth,11,,,,,,
+Marketing,Company Policies,11,,,,, ,
+Marketing,Manager Support,11,,,,,,
+Marketing,Role Clarity,11,,,,,,
+Operations,Career Growth,8,,,,,,
+Operations,Company Policies,8,,,,,,
+Operations,Manager Support,8,,,,,,
+Operations,Role Clarity,8,,,,,,
+Sales,Career Growth,11,,,,,,
+Sales,Company Policies,11,,,,,,
+Sales,Manager Support,11,,,,,,
+Sales,Role Clarity,11,,,,,,
+Support,Career Growth,11,,,,,,
+Support,Company Policies,11,,,,,,
+Support,Manager Support,11,,,,,,
+Support,Role Clarity,11,,,,,,
+,,,,,,,,
+Query #3 Execution time: 0.79ms,,,,,,,,
+location,driver_name,count(b.score),,,,,,
+Bangalore,Career Growth,19,SUM of count(b.score),driver_name,,,,
+Bangalore,Company Policies,19,location,Career Growth,Company Policies,Manager Support,Role Clarity,Grand Total
+Bangalore,Manager Support,19,Bangalore,19,19,19,19,76
+Bangalore,Role Clarity,19,Mumbai,14,14,14,14,56
+Mumbai,Career Growth,14,San Francisco,22,22,22,22,88
+Mumbai,Company Policies,14,Grand Total,55,55,55,55,220
+Mumbai,Manager Support,14,,,,,,
+Mumbai,Role Clarity,14,,,,,,
+San Francisco,Career Growth,22,,,,,,
+San Francisco,Company Policies,22,,,,,,
+San Francisco,Manager Support,22,,,,,,
+San Francisco,Role Clarity,22,,,,,,
+,,,,,,,,
+Query #4 Execution time: 10.32ms,,,,,,,,
+gender,driver_name,count(b.score),,,,,,
+Female,Career Growth,23,,,,,,
+Female,Company Policies,23,SUM of count(b.score),gender,,,,
+Female,Manager Support,23,driver_name,Female,Male,Grand Total,,
+Female,Role Clarity,23,Career Growth,23,32,55,,
+Male,Career Growth,32,Company Policies,23,32,55,,
+Male,Company Policies,32,Manager Support,23,32,55,,
+Male,Manager Support,32,Role Clarity,23,32,55,,
+Male,Role Clarity,32,Grand Total,92,128,220,,
+,,,,,,,,
+Query #5 Execution time: 0.45ms,,,,,,,,
+age_group,count(b.score),age_group,SUM of count(b.score),,,,,
+20-30,68,20-30,68,,,,,
+31-40,52,31-40,52,,,,,
+41-50,100,41-50,100,,,,,
+,,Grand Total,220,,,,,
+Query #6 Execution time: 0.57ms,,,,,,,,
+manager_name,count(b.score),,,,,,,
+Annika Ward,4,manager_name,SUM of count(b.score),,,,,
+Evonne Grant,4,Annika Ward,4,,,,,
+Joycelyn Halvorson,4,Evonne Grant,4,,,,,
+Kandra Lakin,4,Joycelyn Halvorson,4,,,,,
+Lesley Farrell,4,Kandra Lakin,4,,,,,
+Magnolia Kohler,4,Lesley Farrell,4,,,,,
+Malika Deckow,4,Magnolia Kohler,4,,,,,
+Manie Halvorson,4,Malika Deckow,4,,,,,
+Rina Gerhold,4,Manie Halvorson,4,,,,,
+Solomon Fritsch,4,Rina Gerhold,4,,,,,
+,,Solomon Fritsch,4,,,,,
+Query #7 Execution time: 0.77ms,,Grand Total,40,,,,,
+driver_name,department,,,,,,,
+Career Growth,Engineering,COUNTA of department,department,,,,,
+Career Growth,Marketing,driver_name,Engineering,Marketing,Operations,Sales,Support,Grand Total
+Career Growth,Operations,Career Growth,1,1,1,1,1,5
+Career Growth,Sales,Company Policies,1,1,1,1,1,5
+Career Growth,Support,Manager Support,1,1,1,1,1,5
+Company Policies,Engineering,Role Clarity,1,1,1,1,1,5
+Company Policies,Marketing,Grand Total,4,4,4,4,4,20
+Company Policies,Operations,,,,,,,
+Company Policies,Sales,,,,,,,
+Company Policies,Support,,,,,,,
+Manager Support,Engineering,,,,,,,
+Manager Support,Marketing,,,,,,,
+Manager Support,Operations,,,,,,,
+Manager Support,Sales,,,,,,,
+Manager Support,Support,,,,,,,
+Role Clarity,Engineering,,,,,,,
+Role Clarity,Marketing,,,,,,,
+Role Clarity,Operations,,,,,,,
+Role Clarity,Sales,,,,,,,
+Role Clarity,Support,,,,,,,
